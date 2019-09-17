@@ -15,7 +15,8 @@
  */
 package com.handu.open.dubbo.monitor.domain;
 
-import org.springframework.util.StringUtils;
+
+import com.alibaba.dubbo.common.utils.StringUtils;
 
 import java.io.Serializable;
 import java.util.Date;

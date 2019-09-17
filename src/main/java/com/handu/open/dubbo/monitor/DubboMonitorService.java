@@ -20,6 +20,7 @@ import com.alibaba.dubbo.common.URL;
 import com.alibaba.dubbo.common.logger.Logger;
 import com.alibaba.dubbo.common.logger.LoggerFactory;
 import com.alibaba.dubbo.common.utils.ConfigUtils;
+import com.alibaba.dubbo.common.utils.StringUtils;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.alibaba.dubbo.monitor.MonitorService;
 import com.google.common.collect.Maps;
@@ -27,7 +28,6 @@ import com.handu.open.dubbo.monitor.domain.DubboInvoke;
 import com.handu.open.dubbo.monitor.support.Dao;
 import com.handu.open.dubbo.monitor.support.UuidUtil;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.util.StringUtils;
 
 import javax.annotation.PostConstruct;
 import java.text.SimpleDateFormat;
