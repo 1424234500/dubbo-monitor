@@ -15,7 +15,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <dubbo.version>2.5.3</dubbo.version>
-        <spring.version>3.2.9.RELEASE</spring.version>
+        <spring.version>4.3.18.RELEASE</spring.version>
         <zookeeper.version>3.4.6</zookeeper.version>
         <zkclient.version>0.1</zkclient.version>
         <curator.version>2.5.0</curator.version>
@@ -204,6 +204,12 @@
                     <artifactId>jackson-core</artifactId>
                     <groupId>com.fasterxml.jackson.core</groupId>
                 </exclusion>
+
+<!--                dubbo war 部署到tomcat8.5 存在SEC 2.5.6就异常-->
+<!--                <exclusion>-->
+<!--                    <artifactId>spring</artifactId>-->
+<!--                    <groupId>org.springframework</groupId>-->
+<!--                </exclusion>-->
             </exclusions>
         </dependency>
         <dependency>
@@ -295,7 +301,7 @@
     </dependencies>
 
     <build>
-        <finalName>dubbo-monitor-x</finalName>
+        <finalName>dubbo-monitor</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
